@@ -31,6 +31,7 @@ const SignUpForm = () => {
   const history = useHistory();
 
   const handleChange = (event) => {
+    console.log("Previous signUpData:", signUpData);
     setSignUpData({
       ...signUpData,
       [event.target.name]: event.target.value,
